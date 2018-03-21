@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAC0
-        BwAAAk1TRnQBSQFMAgEBAgEAAZABAAGQAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBAgEAAaABAAGgAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -162,6 +162,9 @@
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>493, 17</value>
+  </metadata>
+  <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>583, 17</value>
   </metadata>
   <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>583, 17</value>
@@ -812,17 +815,6 @@
     <value>372, 17</value>
   </metadata>
   <data name="toolStripStatusLabel2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADwAAAA3CAIAAADfWb7mAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAATZJREFUaEPtztGSwyAIQNH++X56lhluWtNqlCqGdDyvItzHdkMrepZh0X81zI3Q
-        FU2OEZ87fBPN8W6ss7NFc20oVlsYojnigAPNmqLZ7YxjDerRrJyCkzWVaJZNxOFTZ9GsmY7zZcVoFlyE
-        iIJ8NF8vRUpOJppPARD04SeiGQ+DrKNDNIPBEJdY0T6IS7yiGQmJxN2KdkPijmgeo9LIp3tEC+1UK9qT
-        dqoV7Uk71Yr2pJ3qztGCx5BI3K1oNyTuXtGCkWCIS6xoH8QlDtGCwTDIOnqPFowHQNCHX4kWfLoUKTn5
-        aMHXixBRUIwWLJiO82Vn0YI1E3H4VCVasGwKTtbUowUrnXGsQVO0YrcDDjQzRAuODMVqC1u04lo31tl9
-        E/3EcSM+d+iKTlFUwNAgw6JnWtFzbNs/uANr2zL9uxcAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="toolStripStatusLabel3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA3CAIAAADfWb7mAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAATZJREFUaEPtztGSwyAIQNH++X56lhluWtNqlCqGdDyvItzHdkMrepZh0X81zI3Q

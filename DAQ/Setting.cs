@@ -12,28 +12,28 @@ namespace DAQ
     [Serializable]
     class MySetting
     {
-        string _ipbCom = "COM2";
         string _chtCom = "COM1";
         string baseDir = @"D:\TestData";
         double ohmupper = 30;
         double ohmlower = 20;
-        double ohmoffset = 0.5;
+        double ohmupper1 = 30;
+        double ohmlower1 = 20;
         string password = "12306";
         int modelIndex = 0;
 
         
         Dictionary<string, string> dictionary = new Dictionary<string, string>();
         List<OhmPara> ohmparas = new List<OhmPara>();
-        public string IpbCom { get => _ipbCom; set => _ipbCom = value; }
         public string ChtCom { get => _chtCom; set => _chtCom = value; }
         public Dictionary<string, string> Dictionary { get => dictionary; set => dictionary = value; }
         public string BaseDir { get => baseDir; set => baseDir = value; }
         public double Ohmupper { get => ohmupper; set => ohmupper = value; }
         public double Ohmlower { get => ohmlower; set => ohmlower = value; }
-        public double Ohmoffset { get => ohmoffset; set => ohmoffset = value; }
         public List<OhmPara> Ohmparas { get => ohmparas; set => ohmparas = value; }
         public string Password { get => password; set => password = value; }
         public int ModelIndex { get => modelIndex; set => modelIndex = value; }
+        public double SecOhmupper { get => ohmupper1; set => ohmupper1 = value; }
+        public double SecOhmlower { get => ohmlower1; set => ohmlower1 = value; }
 
         public static MySetting GetMySetting()
         {
@@ -83,16 +83,11 @@ namespace DAQ
     [Serializable]
     public class OhmPara
     {
-        
-
         public string Name { get; set; }
         public double UpperValue { get; set; }
         public double LowerValue { get; set; }
-        public double Offset { get; set; }
-        public int AutoRange { get; set; }
-        public int Range { get; set; }
-        public int Source { get; set; }
-        public int RATE { get; set; }
+        public double SecUpperValue { get; set; }
+        public double SecLowerValue { get; set; }
     }
 
     public class COMMANDS

@@ -34,11 +34,8 @@ namespace DAQ
                 this.textBox1.Text = a.Name;
                 this.textBox2.Text = a.UpperValue.ToString();
                 this.textBox3.Text = a.LowerValue.ToString();
-                this.textBox4.Text = a.Offset.ToString();
-                this.cboAutoRange.SelectedIndex = a.AutoRange;
-                this.cboRange.SelectedIndex = a.Range;
-                this.cboRate.SelectedIndex = a.RATE;
-                this.cboSource.SelectedIndex = a.Source;
+                this.textBox4.Text = a.SecLowerValue.ToString();
+                this.textBox5.Text = a.SecUpperValue.ToString();
             }
         }
 
@@ -91,17 +88,19 @@ namespace DAQ
                 return;
             }
             a.LowerValue = v;
-            if (!double.TryParse(this.textBox4.Text, out v))
+            if (!double.TryParse(this.textBox5.Text, out v))
             {
-                MessageBox.Show("偏移值应为实数");
+                MessageBox.Show("上限值应为实数");
                 return;
             }
+            a.SecUpperValue = v;
+            if (!double.TryParse(this.textBox4.Text, out v))
+            {
+                MessageBox.Show("下限值应为实数");
+                return;
+            }
+            a.SecLowerValue = v;
 
-            a.Offset = v;
-            a.AutoRange = cboAutoRange.SelectedIndex;
-            a.Range = cboRange.SelectedIndex;
-            a.RATE = cboRate.SelectedIndex;
-            a.Source = cboSource.SelectedIndex;
 
             setting.Ohmparas.Add(a);
             MySetting.Serialize(setting);
@@ -140,14 +139,20 @@ namespace DAQ
                 MessageBox.Show("偏移值应为实数");
                 return;
             }
-            para.Offset = v;
-            para.AutoRange = cboAutoRange.SelectedIndex;
-            para.Range = cboRange.SelectedIndex;
-            para.RATE = cboRate.SelectedIndex;
-            para.Source = cboSource.SelectedIndex;
+            if (!double.TryParse(this.textBox5.Text, out v))
+            {
+                MessageBox.Show("上限值应为实数");
+                return;
+            }
+            para.SecUpperValue = v;
+            if (!double.TryParse(this.textBox4.Text, out v))
+            {
+                MessageBox.Show("下限值应为实数");
+                return;
+            }
+            para.SecLowerValue = v;
             setting.Ohmparas[index] = para;
             MySetting.Serialize(setting);
-
             listBox1.Items.Clear();
             setting = MySetting.GetMySetting();
             listBox1.Items.AddRange(setting.Ohmparas.Select(t => t.Name).ToArray());
@@ -176,11 +181,8 @@ namespace DAQ
             this.textBox1.Text = a.Name;
             this.textBox2.Text = a.UpperValue.ToString();
             this.textBox3.Text = a.LowerValue.ToString();
-            this.textBox4.Text = a.Offset.ToString();
-            this.cboAutoRange.SelectedIndex = a.AutoRange;
-            this.cboRange.SelectedIndex = a.Range;
-            this.cboRate.SelectedIndex = a.RATE;
-            this.cboSource.SelectedIndex = a.Source;
+            this.textBox4.Text = a.SecLowerValue.ToString();
+            this.textBox5.Text = a.SecUpperValue.ToString();
         }
     }
 }

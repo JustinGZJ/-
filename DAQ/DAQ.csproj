@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>ico.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -75,17 +72,12 @@
     <Compile Include="GZJBaseForm.Designer.cs">
       <DependentUpon>GZJBaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPB.cs" />
     <Compile Include="labeledediter.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="labeledediter.Designer.cs">
       <DependentUpon>labeledediter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OhmSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OhmSetting.Designer.cs">
-      <DependentUpon>OhmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Password.cs">
       <SubType>Form</SubType>
@@ -135,9 +127,6 @@
     <EmbeddedResource Include="labeledediter.resx">
       <DependentUpon>labeledediter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OhmSetting.resx">
-      <DependentUpon>OhmSetting.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Password.resx">
       <DependentUpon>Password.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,9 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="picture\LogowithName.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

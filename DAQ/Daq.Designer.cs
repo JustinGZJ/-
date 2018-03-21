@@ -33,11 +33,8 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +46,6 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.串口设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.其他设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.路径设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统补偿ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.密码设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,16 +54,9 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.menuStrip2.SuspendLayout();
@@ -92,29 +81,11 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.splitContainer1);
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(21, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(959, 564);
             this.panel1.TabIndex = 24;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(959, 564);
-            this.splitContainer1.SplitterDistance = 282;
-            this.splitContainer1.TabIndex = 24;
             // 
             // groupBox1
             // 
@@ -122,8 +93,8 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(959, 282);
-            this.groupBox1.TabIndex = 22;
+            this.groupBox1.Size = new System.Drawing.Size(959, 564);
+            this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "电阻测试";
             // 
@@ -140,33 +111,8 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(953, 260);
+            this.dataGridView2.Size = new System.Drawing.Size(953, 542);
             this.dataGridView2.TabIndex = 21;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(959, 278);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "点焊数据";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(953, 256);
-            this.dataGridView1.TabIndex = 20;
             // 
             // groupBox7
             // 
@@ -278,7 +224,6 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.串口设置ToolStripMenuItem,
-            this.其他设置ToolStripMenuItem,
             this.路径设置ToolStripMenuItem,
             this.系统补偿ToolStripMenuItem,
             this.密码设置ToolStripMenuItem});
@@ -293,13 +238,6 @@
             this.串口设置ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.串口设置ToolStripMenuItem.Text = "串口设置...";
             this.串口设置ToolStripMenuItem.Click += new System.EventHandler(this.串口设置ToolStripMenuItem_Click);
-            // 
-            // 其他设置ToolStripMenuItem
-            // 
-            this.其他设置ToolStripMenuItem.Name = "其他设置ToolStripMenuItem";
-            this.其他设置ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.其他设置ToolStripMenuItem.Text = "名称设置...";
-            this.其他设置ToolStripMenuItem.Click += new System.EventHandler(this.其他设置ToolStripMenuItem_Click);
             // 
             // 路径设置ToolStripMenuItem
             // 
@@ -344,8 +282,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3});
+            this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 727);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
@@ -365,13 +302,6 @@
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(84, 17);
             this.toolStripStatusLabel2.Text = "电阻测试仪";
             // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripStatusLabel3.Image")));
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(60, 17);
-            this.toolStripStatusLabel3.Text = "点焊机";
-            // 
             // Daq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -387,14 +317,8 @@
             this.Text = "数据采集程序";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -414,13 +338,11 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 串口设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 其他设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 路径设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 系统补偿ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 密码设置ToolStripMenuItem;
@@ -431,14 +353,11 @@
         private System.Windows.Forms.TextBox tbxFirstNum;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label lblFirstNum;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
 
